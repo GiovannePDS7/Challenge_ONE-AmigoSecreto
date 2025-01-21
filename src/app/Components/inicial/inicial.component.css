@@ -101,3 +101,10 @@ svg {
     color: #110842;
     font-size: 4vw;
 }
+
+#containerSorteio-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+svg {
+    display: block;
+}
+
+#h1-mobile {
+    width: 100%;
+    text-align: center;
+    padding: 3vw 0;
+}
+
+#h1-mobile, .b-participante {
+    font-size: 5.5vw;
+}
+
+.b-participante, .sorteadoAtual {
+    color: #2a198b;
+}
+
+#section-amgSecreto-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 85vh;
+    background: #ff8600;
+}
+
+#h2-mobile {
+    font-size: 5vw;
+    text-align: center;
+}
+
+#containerAmigoSecreto-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 80%;
+}
+
+.div-svg {
+    height: 10%;
+    width: 100%;
+}
+
+.blur {
+    filter: blur(3px);
+    transition: filter 0.2s ease;
+}
