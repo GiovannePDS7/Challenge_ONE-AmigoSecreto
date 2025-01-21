@@ -50,6 +50,5 @@ svg {
 }
 
 .blur {
-    filter: blur(3px);
-    transition: filter 0.2s ease;
+    filter: blur(5px);
 }

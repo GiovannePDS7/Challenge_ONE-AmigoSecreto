@@ -60,6 +60,7 @@ svg {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     font-size: 4vw;
+    background-color: #ff8600;
 }
 
 .containerSubInput {
