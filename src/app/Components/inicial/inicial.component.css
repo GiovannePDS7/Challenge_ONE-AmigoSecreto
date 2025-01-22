@@ -59,7 +59,6 @@ svg {
     height: 100%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    font-size: 4vw;
     background-color: #ff8600;
 }
 
@@ -108,4 +107,16 @@ svg {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+#input-name-mobile {
+    font-size: 4vw;
+}
+
+#p-mobile {
+    font-size: 3.7vw;
+}
+
+#btn-input-mobile{
+    font-size: 4vw;
 }

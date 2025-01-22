@@ -13,8 +13,10 @@
         <div id="containerAmigoSecreto-mobile">
             <h2 id="h2-mobile">Clique no botão abaixo para visualizar e esconder seu amigo secreto!</h2>
             <span *ngIf="sorteadoAtual" id="sorteadoAtual-mobile" class="sorteadoAtual"  [class.blur]="!amigoVisivel">{{ sorteadoAtual }}</span>
-            <button (click)="toggleAmigoSecreto()">Exibir amigo secreto</button>
-            <button (click)="proximoParticipante()">Próximo participante</button>
+            <div id="containerBtn-mobile">
+                <button (click)="toggleAmigoSecreto()" id="btn-exibir-mobile" class="btn-exibir">{{exibirAmigo}}</button>
+                <button (click)="proximoParticipante()" id="btn-prox-mobile" class="btn-prox">Próximo participante</button>
+            </div>
         </div>
         <div class="div-svg">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 318">

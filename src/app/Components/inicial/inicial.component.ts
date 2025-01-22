@@ -24,12 +24,15 @@ export class InicialComponent {
       alert("Preencha o nome do participante");
     }
     else {
-      if (this.novoParticipante.trim()) {
+      if (!this.participantes.includes(this.novoParticipante.trim())) {
         this.participantes.push(this.novoParticipante.trim());
         this.novoParticipante = '';
         this.spanLista = 'Lista de participantes:'
 
         console.table(this.participantes)
+      }
+      else {
+        alert("Não escolha nomes iguais!");
       }
     }
   }

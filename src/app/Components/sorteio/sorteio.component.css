@@ -27,7 +27,7 @@ svg {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 85vh;
+    height: 80vh;
     background: #ff8600;
 }
 
@@ -51,4 +51,43 @@ svg {
 
 .blur {
     filter: blur(5px);
+}
+
+#sorteadoAtual-mobile {
+    font-size: 5.3vw;
+}
+
+.btn-exibir, .btn-prox {
+    border: none;
+    background: none;
+}
+
+.btn-exibir-mobile {
+    font-size: 3.8vw;
+    width: 45vw;
+}
+
+.btn-exibir {
+    white-space: nowrap;
+    background: #2a198b;
+    padding: 1.2vw;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#btn-prox-mobile {
+    font-size: 3.6vw;
+}
+
+.btn-prox {
+    color: #fff;
+    font-weight: 350;
+}
+
+#containerBtn-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 20%;
 }

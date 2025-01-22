@@ -16,16 +16,12 @@ export class SorteioComponent implements OnInit {
   sorteados: string[] = [];
   sorteadoAtual: string = '';
   amigoVisivel: boolean = false;
-
+  exibirAmigo: string = 'Exibir amigo secreto';
   constructor(private sharedService: SharedService, private router: Router) { }
 
   ngOnInit(): void {
     this.participantes = this.sharedService.getParticipantes();
     console.log(this.participantes);
-
-    if (this.participantes.length == 0) {
-      this.router.navigate(['/inicial']);
-    }
 
     this.sortear();
   }
@@ -33,16 +29,22 @@ export class SorteioComponent implements OnInit {
   // Método para exibir ou esconder o amigo secreto
   toggleAmigoSecreto(): void {
     this.amigoVisivel = !this.amigoVisivel;
+
+    if (this.amigoVisivel) {
+      this.exibirAmigo = 'Esconder amigo secreto';
+    }
+    else {
+      this.exibirAmigo = 'Exibir amigo secreto';
+    }
   }
 
   // Método para realizar o sorteio
   sortear(): void {
     // Cria um array de sorteio excluindo o participante da vez e os já sorteados
-    const participantesParaSorteio = this.participantes.filter((_, index) => 
+    const participantesParaSorteio = this.participantes.filter((_, index) =>
       index !== this.indiceParticipante && !this.sorteados.includes(this.participantes[index])
     );
 
-    // Verifica se ainda existem participantes para sortear
     if (participantesParaSorteio.length === 0) {
       alert('Todos os participantes já foram sorteados!');
       this.router.navigate(['/inicial']);

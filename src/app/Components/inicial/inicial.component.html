@@ -21,12 +21,13 @@
 
             <div id="container-input-mobile" class="container-input">
                 <div class="containerSubInput">
-                    <input class="input-name" type="text" [(ngModel)]="novoParticipante" placeholder="Digite o nome">
-                    <button class="btn-input" (click)="adicionarParticipante()">Adicionar</button>
+                    <input id="input-name-mobile" class="input-name" type="text" [(ngModel)]="novoParticipante"
+                        placeholder="Digite o nome">
+                    <button id="btn-input-mobile" class="btn-input" (click)="adicionarParticipante()">Adicionar</button>
                 </div>
                 <section class="sectionParticipantes">
                     <span class="ListaParticipantes" [innerText]="spanLista"></span>
-                    <p *ngFor="let participante of participantes">{{ participante }}</p>
+                    <p id="p-mobile" *ngFor="let participante of participantes">{{ participante }}</p>
                 </section>
             </div>
             <div id="containerBtnSorteio-mobile" class="containerBtnSorteio">
