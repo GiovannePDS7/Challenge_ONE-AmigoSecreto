@@ -5,6 +5,7 @@
 }
 
 
+
 .h1-title {
     font-family: "Playwrite IN", serif;
     font-optical-sizing: auto;
@@ -27,7 +28,7 @@ svg {
     display: block;
 }
 
-.GiftImg-mobile {
+#GiftImg-mobile {
     width: 60vw;
 
 }
@@ -54,12 +55,24 @@ svg {
     padding-left: 3.5vw;
 }
 
+#input-name-desktop, #btn-input-desktop {
+    height: 6.5vh;
+}
+
+#input-name-desktop {
+    width: 30vw;
+}
+
 .btn-input {
     width: 25vw;
     height: 100%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: #ff8600;
+}
+
+#btn-input-desktop {
+    width: 13vw;
 }
 
 .containerSubInput {
@@ -102,6 +115,13 @@ svg {
     font-size: 4vw;
 }
 
+#btn-sortear-desktop {
+    margin-top: 2%;
+    width: 10vw;
+    height: 6vh;
+    font-size: 1.6vw;
+}
+
 #containerSorteio-mobile {
     display: flex;
     align-items: center;
@@ -117,6 +137,53 @@ svg {
     font-size: 3.7vw;
 }
 
-#btn-input-mobile{
+#btn-input-mobile {
     font-size: 4vw;
+}
+
+#containerTitle-desktop {
+    padding-top: 3vh;
+}
+
+#sectionTitle-desktop {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 28vh;
+}
+
+#GiftImg-desktop {
+    height: 125%;
+}
+
+.divSubTitle {
+    height: 80%;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#h1-desktop {
+    color: #fff;
+    font-size: 3.4vw;
+}
+
+#ListaParticipantes-desktop {
+    margin: 0;
+    font-size: 1.4vw;
+    overflow-x: hidden;
+}
+
+#input-name-desktop, #btn-input-desktop {
+    font-size: 1.2vw;
+}
+
+#p-desktop {
+    font-size: 1.3vw;
+}
+
+.teste {
+    overflow-x: hidden;
 }

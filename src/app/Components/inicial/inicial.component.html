@@ -9,7 +9,7 @@
             </svg>
             <h1 id="h1-mobile" class="h1-title pb-1">Sorteio Amigo Secreto</h1>
 
-            <img src="../../../assets/GiftImage.svg" class="img-fluid GiftImg-mobile" alt="">
+            <img src="../../../assets/GiftImage.svg" class="img-fluid" id="GiftImg-mobile" alt="">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 318">
                 <path fill="#fff" fill-opacity="1"
                     d="M0,160L40,160C80,160,160,160,240,165.3C320,171,400,181,480,170.7C560,160,640,128,720,138.7C800,149,880,203,960,224C1040,245,1120,235,1200,224C1280,213,1360,203,1400,197.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
@@ -35,4 +35,40 @@
             </div>
         </div>
     </section>
+</div>
+
+<div class="d-none d-md-block">
+    <section class="overflow-hidden d-flex align-items-center justify-content-center flex-column">
+        <div id="containerTitle-desktop" class="containerTitle">
+            <section id="sectionTitle-desktop">
+                <div class="divSubTitle">
+                    <h1 id="h1-desktop" class="h1-title pb-1">Sorteio Amigo Secreto</h1>
+                </div>
+                <div class="divSubTitle">
+                    <img src="../../../assets/GiftImage.svg" class="img-fluid" id="GiftImg-desktop" alt="">
+                </div>
+            </section>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240">
+                <path fill="#fff" fill-opacity="1"
+                    d="M0,160L40,160C80,160,160,160,240,165.3C320,171,400,181,480,170.7C560,160,640,128,720,138.7C800,149,880,203,960,224C1040,245,1120,235,1200,224C1280,213,1360,203,1400,197.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div id="containerSorteio-desktop" class="containerSorteio">
+            <div class="containerSubInput d-flex align-items-center justify-content-center">
+                <input id="input-name-desktop" class="input-name" type="text" [(ngModel)]="novoParticipante"
+                    placeholder="Digite o nome">
+                <button id="btn-input-desktop" class="btn-input" (click)="adicionarParticipante()">Adicionar</button>
+            </div>
+            <section class="sectionParticipantes pb-1">
+                <span class="ListaParticipantes" id="ListaParticipantes-desktop" [innerText]="spanLista"></span>
+                <p id="p-desktop" *ngFor="let participante of participantes">{{ participante }}</p>
+            </section>
+            <div id="containerBtnSorteio-desktop" class="containerBtnSorteio">
+                <button (click)="IniciarSorteio()" id="btn-sortear-desktop" class="btn-sortear">Sortear</button>
+            </div>
+        </div>
+    </section>
+
 </div>
