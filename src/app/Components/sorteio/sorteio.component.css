@@ -14,21 +14,31 @@ svg {
     padding: 3vw 0;
 }
 
-#h1-mobile, .b-participante {
+#h1-mobile, #b-participante-mobile {
     font-size: 5.5vw;
 }
 
-.b-participante, .sorteadoAtual {
+#b-participante-mobile, .sorteadoAtual, #b-participante-desktop {
     color: #2a198b;
 }
 
 #section-amgSecreto-mobile {
+    height: 80vh;
+}
+
+.section-amgSecreto {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 80vh;
     background: #ff8600;
+}
+
+#section-amgSecreto-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #h2-mobile {
@@ -42,6 +52,14 @@ svg {
     justify-content: space-evenly;
     flex-direction: column;
     height: 80%;
+}
+
+#containerAmigoSecreto-desktop {
+    height: 26vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .div-svg {
@@ -62,7 +80,7 @@ svg {
     background: none;
 }
 
-.btn-exibir-mobile {
+#btn-exibir-mobile {
     font-size: 3.8vw;
     width: 45vw;
 }
@@ -90,4 +108,43 @@ svg {
     justify-content: space-between;
     flex-direction: column;
     height: 20%;
+}
+
+#containerBtn-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#h1-desktop {
+    width: 100%;
+    text-align: center;
+}
+
+#b-participante-desktop, #h1-desktop {
+    white-space: nowrap;
+    margin-top: 3%;
+    font-size: 2.4vw;
+}
+
+#h2-desktop {
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+    padding-top: 2%;
+}
+
+#sorteadoAtual-desktop {
+    font-size: 2vw;
+}
+
+#btn-exibir-desktop {
+    padding: 0;
+    height: 7vh;
+    padding: 0 1vw;
+}
+
+#btn-prox-desktop, #btn-exibir-desktop {
+    font-size: 1.3vw;
 }
